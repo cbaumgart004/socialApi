@@ -12,10 +12,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api/users', userRoutes)
 app.use('/api/thoughts', thoughtRoutes)
 
-mongoose.connect('mongodb://localhost/social-network-api', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect('mongodb://localhost/social-network-api', {})
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`)
