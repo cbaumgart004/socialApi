@@ -31,10 +31,7 @@ const thoughts = [
 ]
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/social-network-api', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect('mongodb://localhost/social-network-api', {})
 
 const seedDatabase = async () => {
   try {
